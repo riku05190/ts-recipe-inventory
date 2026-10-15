@@ -10,25 +10,32 @@ The primary purpose was to demonstrate key TypeScript concepts:
 - **Recursion:** Aggregating nested sub-recipe requirements and generating ASCII hierarchy trees.
 - **Async/Await:** Managing asynchronous data fetching and baking simulation delays.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/iqZdGRtqslg)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+- **IDE / Editor:** Visual Studio Code
+- **Runtime & Package Manager:** Node.js (LTS) & npm
+- **Version Control:** Git & GitHub
 
-{Describe the programming language that you used and any libraries.}
+The project is written in **TypeScript (v5.7+)** targeting Node.js.
+
+Key libraries and dependencies used include:
+- **`typescript`**: Compiler (`tsc`) providing static typing and transpilations.
+- **`ts-node`**: Execution engine to execute TypeScript files directly in development.
+- **`jest` & `ts-jest`**: Unit testing framework with TypeScript support for automated test suites.
+- **`@types/node` & `@types/jest`**: Type definitions providing autocompletion and compile-time type safety.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [TypeScript Official Documentation](https://www.typescriptlang.org/docs/handbook/intro.html) - In-depth guide to TypeScript syntax, types, and language features.
+- [TypeScript Classes Reference](https://www.typescriptlang.org/docs/handbook/2/classes.html) - Guide on class constructors, parameter properties, and inheritance.
+- [Jest Testing Documentation](https://jestjs.io/docs/getting-started) - Documentation for unit testing setup and assertions with TypeScript.
+- [MDN Web Docs - Async Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) - Reference for modern asynchronous programming using `async` and `await`.
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- **Database Persistence:** Replace mock in-memory data with a persistent database (e.g., SQLite/PostgreSQL using Prisma) to save real-time inventory updates and custom recipes.
+- **Unit Conversion Engine:** Implement automatic unit conversion algorithms (e.g., converting grams to kilograms, or teaspoons to milliliters) during recursive requirement aggregation.
+- **Interactive CLI / Web UI:** Build an interactive terminal interface (using `inquirer`) or a RESTful API with a web frontend to allow users to dynamically create recipes and manage stock.
+- **Expiration Date & Alert System:** Extend the `Ingredient` model to track expiration dates and notify users of near-expiry items to reduce food waste.
